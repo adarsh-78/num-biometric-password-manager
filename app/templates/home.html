@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Manager - Home</title>
+</head>
+<body>
+    <h1>Welcome to the Password Manager!</h1>
+    {% if 'user_id' in session %}
+        <p>Hello, {{ session['user_name'] }}!</p>
+        <p><a href="{{ url_for('dashboard') }}">Go to Dashboard</a></p>
+        <p><a href="{{ url_for('logout') }}">Logout</a></p>
+    {% else %}
+        <p><a href="{{ url_for('register') }}">Register</a></p>
+        <p><a href="{{ url_for('login') }}">Login</a></p>
+    {% endif %}
+</body>
+</html>
