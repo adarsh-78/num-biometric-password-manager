@@ -1,8 +1,7 @@
 from cryptography.fernet import Fernet
 
-# Paste the fixed shared key from Adarsh here
-key = b'REPLACE_WITH_ADARSH_KEY'
-
+# Fixed key from Adarsh’s CLI encryption
+key = b'r5t9Ci7sgQTMuoCeBu5BBRLJ5iGlkvpq5Rb0ZUXp_oo='
 cipher = Fernet(key)
 
 def encrypt_password(plain_text):
