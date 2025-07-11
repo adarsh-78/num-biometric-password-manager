@@ -1,19 +1,7 @@
-# Ignore virtual environments
 venv/
-
-# Ignore Python cache
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Ignore DB files (optional)
+*.py[cod]
 *.db
-
-# Ignore environment/config files
 .env
-
-# IDE configs (optional)
 .vscode/
 .idea/
-secret.key

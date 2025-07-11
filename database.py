@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS users (
 )
 ''')
 
-# ✅ CREDENTIALS table
+# CREDENTIALS table
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS credentials (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
